@@ -15,7 +15,7 @@
 ---
 Игра **Угадай Число** умещается на одном экране и выглядит следующим образом:
 
-[](https://github.com/SimpleBeat/GuessTheNumberSwiftUI/blob/main/screenGeneral.png)!
+![](https://github.com/SimpleBeat/GuessTheNumberSwiftUI/blob/main/screenGeneral.png)
 
 На главном экране располагаются:
  - Название игры (элемент `Text()` и его базовые аттрибуты)

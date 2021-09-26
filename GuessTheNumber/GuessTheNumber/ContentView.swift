@@ -41,13 +41,12 @@ struct GuessTheNumber: View {
 struct GameField: View {
     @State var currentAttempt: Int // текущая попытка
     @State var maxAttemtps: Int // максимум попыток
-    @State private var digit10 = 0 // число циферблата (разряд десятков)
-    @State private var digit1 = 0 // число циферблата (раздяд единиц)
+    @State private var digit10 = 0 // число табло (разряд десятков)
+    @State private var digit1 = 0 // число табло (раздяд единиц)
     @State private var min = 0 // минимум диапазона
     @State private var max = 99 // максимум диапазона
     @State private var attemptNames = ["последняя попытка", "две попытки", "три попытки", "четыре попытки", "пять попыток", "шесть попыток", "семь попыток", "восемь попыток"] // цифры словами
     @State private var hint = "Угадывайте!" // подсказка
-    @State private var guess = 0 // число-предположение игрока
     @State private var number = Int.random(in: 0...99) // случайное число
     @State private var newGameHint = "Начнем!" // дополнительный текст
     
@@ -275,7 +274,7 @@ struct GameField: View {
     }
 }
 
-// MARK: Вспомогательная структура
+// MARK: Вспомогательная структура - XCode SwiftUI preview
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         GuessTheNumber()
